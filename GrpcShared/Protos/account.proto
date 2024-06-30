@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcShared";
+
+package account;
+
+// הגדרת המסרים (messages) שישמשו לבקשות ולתשובות
+message LoginRequest {
+  string email = 1;
+  string password = 2;
+}
+
+message LoginReply {
+  bool success = 1;
+  string token = 2;
+}
+
+message RegisterRequest {
+  string email = 1;
+  string password = 2;
+  string fullName =3;
+}
+
+message RegisterReply {
+  bool success = 1;
+  string message = 2;
+}
+
+// הגדרת השירות עצמו
+service AccountServiceBasic {
+  // פעולת הלוגין
+  rpc Login(LoginRequest) returns (LoginReply) {}
+
+  // פעולת ההרשמה
+  rpc Register(RegisterRequest) returns (RegisterReply) {}
+}
