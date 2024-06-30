@@ -33,7 +33,7 @@
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/HolyMoments.git
+   git clone https://github.com/YAKOV-FRIDMAN/HolyMoments.git
 
 2. **Navigate to the Project Directory
    ```bash
