@@ -35,14 +35,14 @@
    ```bash
    git clone https://github.com/YAKOV-FRIDMAN/HolyMoments.git
 
-2. **Navigate to the Project Directory
+2. **Navigate to the Project Directory**
    ```bash
    cd HolyMoments
 
-3. **Build the Projec
+3. **Build the Projec**
     ```bash
-      dotnet build
-4. **Run the Application
+    dotnet build
+4. **Run the Application**
      ```bash
      dotnet run
 
